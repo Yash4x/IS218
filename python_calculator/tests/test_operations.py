@@ -30,3 +30,23 @@ def test_divide_by_zero():
     """Test that dividing by zero raises an exception."""
     with pytest.raises(ZeroDivisionError):
         divide(1, 0)
+
+@pytest.mark.parametrize("a, b, expected", [
+    (1, 2, 3),
+    (0, 0, 0),
+    (-1, 1, 0),
+    (100, -100, 0)
+])
+def test_add_parameterized(a, b, expected):
+    """Test add function with multiple inputs."""
+    assert add(a, b) == expected
+
+@pytest.mark.parametrize("a, b, expected", [
+    (5, 2, 3),
+    (0, 0, 0),
+    (1, 1, 0),
+    (-1, -1, 0)
+])
+def test_subtract_parameterized(a, b, expected):
+    """Test subtract function with multiple inputs."""
+    assert subtract(a, b) == expected

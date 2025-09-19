@@ -1,6 +1,6 @@
 """Tests for calculator operations."""
-
-from calculator.operations import add, subtract
+import pytest;
+from calculator.operations import add, subtract, multiply, divide
 
 def test_add():
     """Test the add function."""
@@ -13,3 +13,20 @@ def test_subtract():
     assert subtract(3, 2) == 1
     assert subtract(2, 3) == -1
     assert subtract(0, 0) == 0
+
+def test_multiply():
+    """Test the multiply function."""
+    assert multiply(2, 3) == 6
+    assert multiply(-2, 3) == -6
+    assert multiply(0, 5) == 0
+
+def test_divide():
+    """Test the divide function."""
+    assert divide(6, 3) == 2
+    assert divide(5, 2) == 2.5
+    assert divide(-6, 2) == -3
+
+def test_divide_by_zero():
+    """Test that dividing by zero raises an exception."""
+    with pytest.raises(ZeroDivisionError):
+        divide(1, 0)

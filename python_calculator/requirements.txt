@@ -1,0 +1,13 @@
+astroid==3.3.11
+-e git+ssh://git@github.com/Yash4x/IS218.git@8a72b9bfb177fa7cbf09c8a66c5dc5fda5269ca1#egg=calculator&subdirectory=python_calculator
+dill==0.4.0
+iniconfig==2.1.0
+isort==6.0.1
+mccabe==0.7.0
+packaging==25.0
+platformdirs==4.4.0
+pluggy==1.6.0
+Pygments==2.19.2
+pylint==3.3.8
+pytest==8.4.2
+tomlkit==0.13.3

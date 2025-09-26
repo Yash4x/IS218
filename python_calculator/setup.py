@@ -1,9 +1,8 @@
-# IS218/python_calculator/setup.py
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name="calculator",
-    version="0.1.0",
-    py_modules=["calculator"],  # matches calculator.py
-    python_requires=">=3.8",
+    version="0.1",
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
 )

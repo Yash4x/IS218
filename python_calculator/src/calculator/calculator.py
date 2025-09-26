@@ -8,6 +8,10 @@ class Calculator:
     def __init__(self):
         """Initialize calculator with memory set to 0."""
         self.memory = 0
+
+    def update_display(self, value):
+        """Update the calculator display."""
+        self.display = str(value)
     
     def add(self, a, b):
         """Add two numbers."""

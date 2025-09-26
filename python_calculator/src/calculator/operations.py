@@ -31,16 +31,7 @@ def subtract(a, b):
     return a - b
 
 def multiply(a, b):
-    """
-    Multiply two numbers and return the result.
-    
-    Args:
-        a: First number
-        b: Second number
-        
-    Returns:
-        The product of a and b
-    """
+    """Multiply two numbers and return the result."""
     return a * b
 
 def divide(a, b):
@@ -48,12 +39,12 @@ def divide(a, b):
     Divide a by b and return the result.
     
     Args:
-        a: Numerator
-        b: Denominator
-        
+        a: The dividend
+        b: The divisor
+            
     Returns:
         The quotient a/b
-        
+            
     Raises:
         ZeroDivisionError: If b is 0
     """
